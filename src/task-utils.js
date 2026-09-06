@@ -1,5 +1,6 @@
 function formatTask(task) {
-  return `[${task.status}] ${task.title}`;
+  const priority = task.priority ? ` (${task.priority})` : "";
+  return `[${task.status}] ${task.title}${priority}`;
 }
 
 module.exports = { formatTask };
